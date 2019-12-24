@@ -34,6 +34,7 @@ class _HelloYouState extends State<HelloYou> {
         padding: EdgeInsets.all(15.0),
         child: Column(children: <Widget>[
           TextField(
+            decoration: InputDecoration(hintText: "Please input your name"),
             onChanged: (String string) {
               setState(() {
                 name = string;
